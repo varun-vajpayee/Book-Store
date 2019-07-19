@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>kIRA27</title>
+<link rel="stylesheet" type="text/css" href="Css/SignUp.css" />
+</head>
+<body
+	style="background-image: url('Picture1.jpg'); height: 100%; background-position: center; background-repeat: no-repeat; background-size: cover;">
+
+	<div>
+		<p>
+			<span><b
+				style="color: #F7DC6F; font-family: 'Exo', sans-serif; font-size: 35px;">Shopping
+					Cart For BookStore</b></span>
+
+		</p>
+	</div>
+	<div style="text-align: left;">
+		<p>
+			<b
+				style="color: rgb(0, 0, 0); font-family: 'Exo', sans-serif; font-size: 35px;">SIGN</b><span><b
+				style="color: #F7DC6F; font-family: 'Exo', sans-serif; font-size: 35px;">UP</b></span>
+		</p>
+	</div>
+	<!-- PHONE NUMBER -->
+	<form action="SignUpServlet" method="post">
+		<label for="PHONENUMBER"><b
+			style="color: #F7DC6F; font-family: 'Exo', sans-serif; position: inherit;">Phone
+				Number*</b></label><input type="text" placeholder="Phone Number"
+			name="phone_Number" required="required" autocomplete="off"
+			pattern="[0-9]{10}" title="Must contain 10 digit mobile number.">
+		<br>
+		<!-- PASSWORD -->
+		<label for="PASSWORD"><b
+			style="color: #F7DC6F; font-family: 'Exo', sans-serif; position: inherit; text-align: center;">
+				Password*</b> </label><input type="password" placeholder="Enter Password"
+			name="password" required="required" autocomplete="off"
+			pattern="(?=.*\d)(?=.*[a-z]).{6,}"
+			title="Must contain at least one number and one lowercase letter, and at least 6 characters.">
+		<br>
+		<!-- EMAIL -->
+		<label for="EMAIL"><b
+			style="color: #F7DC6F; font-family: 'Exo', sans-serif; position: inherit;">Email
+				Address*</b></label> <input type="email" placeholder="Enter Email Address"
+			name="email_address" required="required" autocomplete="off"
+			pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+			title="Must contain user_name@emailaddress ."> <br>
+		<!-- ADDRESS LINE 1 -->
+		<label for="Address1"><b
+			style="color: #F7DC6F; font-family: 'Exo', sans-serif;">Address
+				Line 1*</b></label><input type="text" placeholder="Address" name="addressLine1"
+			required="required" autocomplete="off"> <br>
+		<!-- ADDRESS LINE 2 -->
+		<label for="Address2"><b
+			style="color: #F7DC6F; font-family: 'Exo', sans-serif;">Address
+				Line 2</b> </label><input type="text" placeholder="Address" name="addressLine2"
+			autocomplete="off"> <br>
+		<!-- CITY -->
+		<b style="color: #F7DC6F; font-family: 'Exo', sans-serif;">City</b><input
+			type="text" placeholder="Enter City" name="city" required="required"
+			autocomplete="off" pattern="[a-zA-Z]+"> <br>
+		<!-- PIN_CODE -->
+		<b style="color: #F7DC6F; font-family: 'Exo', sans-serif;">Pin
+			Code</b> <input type="tel" placeholder="Enter Pin Code" name="pinCode"
+			required="required" autocomplete="off" pattern="[0-9]+"> <br>
+		<!--  REMEMBER ME CHECKBOX -->
+		<div class="checkbox">
+			<label><input type="checkbox"><b>Remember me</b></label>
+		</div>
+		<div
+			style="font-family: 'Exo', sans-serif; background-color: #F7DC6F;"
+			class="clearfix">
+			<button type="submit" class="signup">
+				<b style="color: #000000;">SIGN UP</b>
+			</button>
+		</div>
+	</form>
+	<br>
+	<br>
+	<br>
+	<br>
+	<footer style="color: #F7DC6F; text-align: left;">
+		<i> &copy; Copyright 2019 VarunVajpayee <sup>Tm</sup></i>
+	</footer>
+
+</body>
+</html>
